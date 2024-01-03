@@ -1,6 +1,7 @@
 let s:base_dir = '<sfile>'->expand()->fnamemodify(':p:h')
-let s:plug_dir = $'{s:base_dir}/plug_dir/denops.vim'
+let s:denops = $'{s:base_dir}/plug_dir/denops.vim'
 
-exe 'set rtp^=' .. s:plug_dir
+exe 'set rtp^=' .. s:denops
 
-autocmd User DenopsReady echo 'fired DenopsReady'
+autocmd User DenopsReady echomsg 'fired DenopsReady'
+autocmd VimEnter * echomsg 'fired VimEnter'
