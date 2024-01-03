@@ -1,5 +1,5 @@
 let s:base_dir = '<sfile>'->expand()->fnamemodify(':p:h')
-let s:denops = $'{s:base_dir}/plug_dir/denops.vim'
+let s:denops = $'{s:base_dir}/plug/denops.vim'
 
 exe 'set rtp^=' .. s:denops
 
